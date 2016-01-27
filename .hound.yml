@@ -1,6 +1,4 @@
 fail_on_violations: true
 
-ruby:
-  config_file: .ruby-style.yml
-javascript:
-  config_file: .javascript-style.json
+coffeescript:
+  config_file: ./config/style_guides/coffeescript.json
