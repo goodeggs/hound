@@ -1,5 +1,9 @@
 # Hound
 
+## Styleguides
+- [CoffeeScript](https://github.com/goodeggs/hound/blob/master/config/style_guides/coffeescript.json)
+- JavaScript - TBD!
+
 [![Build Status](https://circleci.com/gh/thoughtbot/hound/tree/master.svg?style=svg)](https://circleci.com/gh/thoughtbot/hound/tree/master)
 [![Code Climate](https://codeclimate.com/repos/526ab75ff3ea007df603b773/badges/32cb8e64b2e265d8cad6/gpa.svg)](https://codeclimate.com/repos/526ab75ff3ea007df603b773/feed)
 [![Slack](http://slack.houndci.com/badge.svg)](http://slack.houndci.com)
