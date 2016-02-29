@@ -3,15 +3,15 @@ module Linter
     LINTERS = [
       Linter::CoffeeScript,
       Linter::Eslint,
-      Linter::Go,
+      # Linter::Go,
       Linter::Haml,
-      Linter::Jscs,
-      Linter::Jshint,
+      # Linter::Jscs,
+      # Linter::Jshint,
       Linter::Mdast,
       Linter::Python,
-      Linter::Ruby,
+      # Linter::Ruby,
       Linter::Scss,
-      Linter::Swift,
+      # Linter::Swift,
     ].freeze
 
     def self.for(filename:, **linter_args)
