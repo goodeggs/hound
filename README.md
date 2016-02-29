@@ -1,12 +1,17 @@
 # Hound
 
+This is a fork of the [Hound CI](http://houndci.com) service that automates PR-review process by commenting on style violations.
+
 ## Styleguides
+
+Linters' configs are stored under the `config/style_guides` folder of the rails app.
+
 - [CoffeeScript](https://github.com/goodeggs/hound/blob/master/config/style_guides/coffeescript.json)
 - JavaScript - TBD!
 
-[![Build Status](https://circleci.com/gh/thoughtbot/hound/tree/master.svg?style=svg)](https://circleci.com/gh/thoughtbot/hound/tree/master)
-[![Code Climate](https://codeclimate.com/repos/526ab75ff3ea007df603b773/badges/32cb8e64b2e265d8cad6/gpa.svg)](https://codeclimate.com/repos/526ab75ff3ea007df603b773/feed)
-[![Slack](http://slack.houndci.com/badge.svg)](http://slack.houndci.com)
+Feel free to copy them to your dev machine to use locally in your favourite text editor. 
+
+## From thoughbot
 
 This codebase is the Rails app for
 [Hound](http://houndci.com),
