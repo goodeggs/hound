@@ -1,0 +1,20 @@
+env_id: 56f4b195928fc71d00597b8a
+
+name: hound
+
+processes:
+  web:
+    command: bundle exec puma -C config/puma.rb
+    instances: 1
+    memory: 450
+
+  worker:
+    command: env TERM_CHILD=1 RESQUE_TERM_TIMEOUT=8 QUEUE=* bundle exec rake resque:work
+    instances: 2
+    memory: 350
+
+  scheduler:
+    command: bundle exec rake resque:scheduler
+    instances: 1
+    memory: 150
+
