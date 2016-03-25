@@ -8,12 +8,12 @@ processes:
     instances: 1
     memory: 450
 
-  resque_high:
+  worker:
     command: env TERM_CHILD=1 RESQUE_TERM_TIMEOUT=8 QUEUE=* bundle exec rake resque:work
     instances: 2
     memory: 350
 
-  resque_scheduler:
+  scheduler:
     command: bundle exec rake resque:scheduler
     instances: 1
     memory: 150
