@@ -6,7 +6,7 @@ processes:
   web:
     command: bundle exec puma -C config/puma.rb
     count: 1
-    memory: 450
+    memory: 512
 
   worker:
     command: env TERM_CHILD=1 RESQUE_TERM_TIMEOUT=8 QUEUE=* bundle exec rake resque:work
