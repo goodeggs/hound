@@ -2,6 +2,8 @@ env_id: 588729a357d1131a00cf3c34
 
 name: hound
 
+logging: edge
+
 processes:
   web:
     command: bundle exec puma -C config/puma.rb
