@@ -7,16 +7,16 @@ logging: edge
 processes:
   web:
     command: bundle exec puma -C config/puma.rb
-    count: 1
+    count: 0
     memory: 512
 
   worker:
     command: env TERM_CHILD=1 RESQUE_TERM_TIMEOUT=8 QUEUE=* bundle exec rake resque:work
-    count: 2
+    count: 0
     memory: 350
 
   scheduler:
     command: bundle exec rake resque:scheduler
-    count: 1
+    count: 0
     memory: 150
 
